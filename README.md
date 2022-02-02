@@ -76,7 +76,7 @@ func main() {
 	gin.SetMode(gin.DebugMode)
 	r := gin.Default()
 	r.Use(gin.Recovery())
-	r.HTMLRender = Pongo4gin.TemplatePath("templates")
+	r.HTMLRender = pongo4gin.TemplatePath("templates")
 	r.GET("/", GetAllData)
 	log.Fatal(r.Run(":8888"))
 }
