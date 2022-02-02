@@ -47,7 +47,7 @@ import (
 	"log"
 	"net/http"
 	"github.com/stnc/pongo4gin"
-	"github.com/flosch/pongo2"
+	"github.com/flosch/pongo2/v4"
 	"github.com/gin-gonic/gin"
 )
 //GetAllData all list
