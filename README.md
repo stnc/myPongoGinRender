@@ -1,4 +1,5 @@
-Pongo4gin
+my Pongo Gin Render
+
 =========
 
 Package Pongo4gin is a template renderer that can be used with the Gin web
