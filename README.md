@@ -1,4 +1,4 @@
-myPongoGinRender
+my Pongo Gin Render
 =========
 
 Package pongo2gin is a template renderer that can be used with the Gin web
