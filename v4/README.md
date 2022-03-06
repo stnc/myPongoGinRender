@@ -18,7 +18,7 @@ pongo2 is a Django-syntax like templating-language (official website).
 
 ## Installation  
 
-`go get "github.com/stnc/pongo4gin"`
+`go get "github.com/stnc/myPongoGinRender/v4"`
 
 Requirements
 ------------

@@ -19,7 +19,7 @@ pongo2 is a Django-syntax like templating-language (official website).
 
 ## Installation  
 
-`go get "github.com/stnc/pongo4gin"`
+`go get "github.com/stnc/myPongoGinRender"`
 
 Requirements
 ------------
@@ -45,14 +45,17 @@ Basic Example
 -------------
 
 ```go
+
 package main
+
 import (
 	"log"
 	"net/http"
-	"github.com/stnc/pongo4gin"
-	"github.com/flosch/pongo2/v4"
+	"github.com/stnc/myPongoGinRender"
+	"github.com/flosch/pongo2"
 	"github.com/gin-gonic/gin"
 )
+
 //GetAllData all list
 func GetAllData(c *gin.Context) {
 	posts := []string{
@@ -79,10 +82,11 @@ func main() {
 	gin.SetMode(gin.DebugMode)
 	r := gin.Default()
 	r.Use(gin.Recovery())
-	r.HTMLRender = pongo4gin.TemplatePath("templates")
+	r.HTMLRender = myPongoGinRender.TemplatePath("templates")
 	r.GET("/", GetAllData)
 	log.Fatal(r.Run(":8888"))
 }
+
 ```
 
 HTML 
