@@ -1,21 +1,24 @@
-Pongo2gin
+Pongo4gin
 =========
 
-Package pongo2gin is a template renderer that can be used with the Gin web
+Package Pongo4gin is a template renderer that can be used with the Gin web
 framework https://github.com/gin-gonic/gin it uses the Pongo2 template library
 https://github.com/flosch/pongo2
 
+Compatible with pongo version 4
 
 pongo2 is a Django-syntax like templating-language (official website).
 
-## Here is Compatible with pongo version 4
- [Pongo4gin](https://github.com/stnc/pongo4gin) - pongo2 gin minimal framework stability renderer / Compatible with pongo version 4
+<strong>Orginal Code By Andrejs Cainikovs - Rob van der Linde (https://gitlab.com/go-box/pongo2gin) </strong>
+
+## Here is Compatible with pongo version 2
+ [Pongo2gin](https://github.com/stnc/pongo2gin) - pongo2 gin minimal framework stability renderer / Compatible with pongo version 2 
 
 # please don't forget to give stars :)
 
 ## Installation  
 
-`go get "github.com/stnc/pongo2gin"`
+`go get "github.com/stnc/pongo4gin"`
 
 Requirements
 ------------
@@ -25,10 +28,10 @@ Requires Gin 1.14 or higher and Pongo2.
 Usage
 -----
 
-To use pongo2gin you need to set your router.HTMLRenderer to a new renderer
+To use Pongo4gin you need to set your router.HTMLRenderer to a new renderer
 instance, this is done after creating the Gin router when the Gin application
 starts up. This assumes templates will be located in the "templates"
-directory, or you can use pongo2gin.TemplatePath("templates") to specify a custom location.
+directory, or you can use Pongo4gin.TemplatePath("templates") to specify a custom location.
 
 To render templates from a route, call c.HTML just as you would with
 regular Gin templates, the only difference is that you pass template
@@ -45,8 +48,8 @@ package main
 import (
 	"log"
 	"net/http"
-	"github.com/stnc/pongo2gin"
-	"github.com/flosch/pongo2"
+	"github.com/stnc/pongo4gin"
+	"github.com/flosch/pongo2/v4"
 	"github.com/gin-gonic/gin"
 )
 //GetAllData all list
@@ -75,7 +78,7 @@ func main() {
 	gin.SetMode(gin.DebugMode)
 	r := gin.Default()
 	r.Use(gin.Recovery())
-	r.HTMLRender = pongo2gin.TemplatePath("templates")
+	r.HTMLRender = pongo4gin.TemplatePath("templates")
 	r.GET("/", GetAllData)
 	log.Fatal(r.Run(":8888"))
 }
@@ -115,7 +118,8 @@ GoDoc
 
 Specials Thanks
 -----
-
 https://gitlab.com/go-box/pongo2gin
 
-https://zhuanlan.zhihu.com/p/105956154
+https://zhuanlan.zhihu.com/p/105956154  
+
+

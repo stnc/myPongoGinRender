@@ -1,10 +1,10 @@
-package pongo2gin
+package pongo4gin
 
 import (
 	"net/http"
 	"path"
 
-	"github.com/flosch/pongo2"
+	"github.com/flosch/pongo2/v4"
 	"github.com/gin-gonic/gin"
 	"github.com/gin-gonic/gin/render"
 )
