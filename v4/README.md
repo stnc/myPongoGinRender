@@ -45,14 +45,16 @@ Basic Example
 
 ```go
 package main
+
 import (
 	"log"
 	"net/http"
-	"github.com/stnc/pongo4gin"
+	myPongoGinRender "github.com/stnc/myPongoGinRender"
+
 	"github.com/flosch/pongo2/v4"
 	"github.com/gin-gonic/gin"
 )
-//GetAllData all list
+
 func GetAllData(c *gin.Context) {
 	posts := []string{
 		"Larry Ellison",
@@ -72,16 +74,15 @@ func GetAllData(c *gin.Context) {
 		},
 	)
 }
-
 func main() {
-
 	gin.SetMode(gin.DebugMode)
 	r := gin.Default()
 	r.Use(gin.Recovery())
-	r.HTMLRender = pongo4gin.TemplatePath("templates")
+	r.HTMLRender = myPongoGinRender.TemplatePath("templates")
 	r.GET("/", GetAllData)
 	log.Fatal(r.Run(":8888"))
 }
+
 ```
 
 HTML 

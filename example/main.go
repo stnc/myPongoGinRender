@@ -3,7 +3,7 @@ package main
 import (
 	"log"
 	"net/http"
-	"github.com/stnc/pongo2gin"
+	"github.com/stnc/myPongoGinRender"
 	"github.com/flosch/pongo2"
 	"github.com/gin-gonic/gin"
 )
@@ -34,7 +34,7 @@ func main() {
 	gin.SetMode(gin.DebugMode)
 	r := gin.Default()
 	r.Use(gin.Recovery())
-	r.HTMLRender = pongo2gin.TemplatePath("templates")
+	r.HTMLRender = myPongoGinRender.TemplatePath("templates")
 	r.GET("/", GetAllData)
 	log.Fatal(r.Run(":8888"))
 }
