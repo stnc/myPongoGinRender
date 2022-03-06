@@ -1,4 +1,4 @@
-Pongo4gin
+myPongoGinRender
 =========
 
 Package Pongo4gin is a template renderer that can be used with the Gin web
@@ -11,8 +11,10 @@ pongo2 is a Django-syntax like templating-language (official website).
 
 <strong>Orginal Code By Andrejs Cainikovs - Rob van der Linde (https://gitlab.com/go-box/pongo2gin) </strong>
 
-## Here is Compatible with pongo version 2
- [Pongo2gin](https://github.com/stnc/pongo2gin) - pongo2 gin minimal framework stability renderer / Compatible with pongo version 2 
+## Here is Compatible with pongo version 4 &  version 5
+ [myPongoGinRender](https://github.com/stnc/myPongoGinRender/) - pongo2 gin minimal framework stability renderer / Compatible with pongo version 2 
+ [myPongoGinRender](https://github.com/stnc/myPongoGinRender/tree/main/v4) -  Compatible with pongo version 4
+ [myPongoGinRender](https://github.com/stnc/myPongoGinRender/tree/main/v5) -  Compatible with pongo version 5
 
 # please don't forget to give stars :)
 
@@ -28,17 +30,17 @@ Requires Gin 1.14 or higher and Pongo2.
 Usage
 -----
 
-To use Pongo4gin you need to set your router.HTMLRenderer to a new renderer
+To use myPongoGinRender you need to set your router.HTMLRenderer to a new renderer
 instance, this is done after creating the Gin router when the Gin application
 starts up. This assumes templates will be located in the "templates"
-directory, or you can use Pongo4gin.TemplatePath("templates") to specify a custom location.
+directory, or you can use myPongoGinRender.TemplatePath("templates") to specify a custom location.
 
 To render templates from a route, call c.HTML just as you would with
 regular Gin templates, the only difference is that you pass template
 data as a pongo2.Context instead of gin.H type.
 
 
-![Screen](https://raw.githubusercontent.com/stnc/pongo2gin/master/example/ginScreen.png)
+![Screen](https://raw.githubusercontent.com/stnc/myPongoGinRender/master/example/ginScreen.png)
 
 Basic Example
 -------------
