@@ -10,6 +10,8 @@ Compatible with pongo version 4
 
 pongo2 is a Django-syntax like templating-language (official website).
 
+I just made it for my own use. Not commercial use 
+
 <strong>Orginal Code By Andrejs Cainikovs - Rob van der Linde (https://gitlab.com/go-box/pongo2gin) </strong>
 
 ## Here is Compatible with pongo version 4 &  version 5
