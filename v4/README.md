@@ -55,7 +55,7 @@ package main
 import (
 	"log"
 	"net/http"
-	myPongoGinRender "github.com/stnc/myPongoGinRender"
+	myPongoGinRender "github.com/stnc/myPongoGinRender/v4"
 
 	"github.com/flosch/pongo2/v4"
 	"github.com/gin-gonic/gin"
